@@ -1,13 +1,13 @@
 %define name	ocaml-pcre
-%define version	5.11.2
-%define release	%mkrel 5
+%define version	5.11.4
+%define release	%mkrel 1
 %define ocaml_sitelib %(if [ -x /usr/bin/ocamlc ]; then ocamlc -where;fi)/site-lib
 
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Summary:	Perl compatibility regular expressions for OCaml
-Source: 	http://www.ocaml.info/ocaml_sources/pcre-ocaml-5.11.2.tar.bz2
+Source: 	http://www.ocaml.info/ocaml_sources/pcre-ocaml-%{version}.tar.bz2
 URL:		http://www.ocaml.info/home/ocaml_sources.html
 License:	GPL
 Group:		Development/Other
@@ -24,11 +24,11 @@ regular expressions which are written in "PERL"-style.
 Searching for, replacing or splitting text should become much easier with
 this library.
 
-%package devel
+%package	devel
 Summary:	Development files for %{name}
 Group:		Development/Other
-Requires:   pcre-devel
-Obsoletes:  %{name}
+Requires:	pcre-devel
+Obsoletes:	%{name}
 
 %description devel
 This package contains the development files needed to build applications
