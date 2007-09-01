@@ -1,7 +1,6 @@
 %define name	ocaml-pcre
 %define version	5.11.4
-%define release	%mkrel 1
-%define ocaml_sitelib %(if [ -x /usr/bin/ocamlc ]; then ocamlc -where;fi)/site-lib
+%define release	%mkrel 2
 
 Name:		%{name}
 Version:	%{version}
@@ -28,7 +27,7 @@ this library.
 Summary:	Development files for %{name}
 Group:		Development/Other
 Requires:	pcre-devel
-Obsoletes:	%{name}
+Requires:	%{name} = %{version}-%{devel}
 
 %description devel
 This package contains the development files needed to build applications
@@ -50,10 +49,14 @@ rm -f %{buildroot}/%{ocaml_sitelib}/stublibs/*.owner
 %clean
 rm -rf %{buildroot}
 
-%files devel
+%files
 %defattr(-,root,root)
 %doc Changes INSTALL LICENSE README VERSION
-%{ocaml_sitelib}/pcre
+%dir %{ocaml_sitelib}/pcre
+%{ocaml_sitelib}/pcre/*.cmi
+
+%files devel
+%defattr(-,root,root)
+%{ocaml_sitelib}/pcre/*
+%exclude %{ocaml_sitelib}/pcre/*.cmi
 %{ocaml_sitelib}/stublibs/dllpcre_stubs.so
-
-
