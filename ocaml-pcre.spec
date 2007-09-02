@@ -1,6 +1,6 @@
 %define name	ocaml-pcre
-%define version	5.11.4
-%define release	%mkrel 3
+%define version	5.12.2
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
