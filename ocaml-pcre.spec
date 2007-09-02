@@ -1,6 +1,6 @@
 %define name	ocaml-pcre
 %define version	5.11.4
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 Name:		%{name}
 Version:	%{version}
@@ -27,7 +27,7 @@ this library.
 Summary:	Development files for %{name}
 Group:		Development/Other
 Requires:	pcre-devel
-Requires:	%{name} = %{version}-%{devel}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This package contains the development files needed to build applications
@@ -54,9 +54,9 @@ rm -rf %{buildroot}
 %doc Changes INSTALL LICENSE README VERSION
 %dir %{ocaml_sitelib}/pcre
 %{ocaml_sitelib}/pcre/*.cmi
+%{ocaml_sitelib}/stublibs/dllpcre_stubs.so
 
 %files devel
 %defattr(-,root,root)
 %{ocaml_sitelib}/pcre/*
 %exclude %{ocaml_sitelib}/pcre/*.cmi
-%{ocaml_sitelib}/stublibs/dllpcre_stubs.so
