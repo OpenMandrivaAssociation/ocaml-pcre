@@ -14,6 +14,7 @@ BuildRequires:	ocaml
 BuildRequires:	pcre-devel
 BuildRequires:  findlib
 Conflicts:      %{name}-devel < 5.12.2
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This OCaml-library interfaces the PCRE (Perl-compatibility regular
