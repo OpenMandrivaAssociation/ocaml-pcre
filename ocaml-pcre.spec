@@ -14,6 +14,7 @@ Group:		Development/Other
 BuildRequires:	ocaml
 BuildRequires:	pcre-devel
 BuildRequires:  ocaml-findlib
+BuildRequires:  tetex-latex
 Conflicts:      %{name}-devel < 5.12.2
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
