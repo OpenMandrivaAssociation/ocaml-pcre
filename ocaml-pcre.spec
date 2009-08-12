@@ -40,13 +40,13 @@ using %{name}.
 
 %build
 %make
+%make doc
 
 %install
 rm -rf %{buildroot}
 install -d -m 755 %{buildroot}/%{_libdir}/ocaml
 install -d -m 755 %{buildroot}/%{_libdir}/ocaml/stublibs
 make install OCAMLFIND_INSTFLAGS="-destdir %{buildroot}/%{_libdir}/ocaml"
-rm -f %{buildroot}/%{_libdir}/ocaml/stublibs/*.owner
 
 %clean
 rm -rf %{buildroot}
@@ -58,10 +58,12 @@ rm -rf %{buildroot}
 %{_libdir}/ocaml/pcre/*.cmi
 %{_libdir}/ocaml/pcre/*.cma
 %{_libdir}/ocaml/pcre/META
-%{_libdir}/ocaml/stublibs/dllpcre_stubs.so
+%{_libdir}/ocaml/stublibs/*.so*
 
 %files devel
 %defattr(-,root,root)
+%doc doc/pcre/html
+%doc doc/pcre/latex/*.{dvi,pdf}
 %{_libdir}/ocaml/pcre/*.a
 %{_libdir}/ocaml/pcre/*.cmxa
 %{_libdir}/ocaml/pcre/*.mli
