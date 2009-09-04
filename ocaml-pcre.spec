@@ -1,6 +1,6 @@
 %define name	ocaml-pcre
 %define version	6.0.1
-%define release	%mkrel 3
+%define release	%mkrel 4
 
 Name:		%{name}
 Version:	%{version}
@@ -9,6 +9,7 @@ Summary:	Perl compatibility regular expressions for OCaml
 Source: 	http://hg.ocaml.info/release/pcre-ocaml/archive/pcre-ocaml-release-%{version}.tar.bz2
 # curl http://hg.ocaml.info/release/pcre-ocaml/archive/release-%{version}.tar.bz2 > pcre-ocaml-release-%{version}.tar.bz2
 URL:		http://ocaml.info/home/ocaml_sources.html#pcre-ocaml
+Patch0:		pcre-ocaml-examples-makefile.patch
 License:	GPL
 Group:		Development/Other
 BuildRequires:	ocaml
@@ -38,6 +39,7 @@ using %{name}.
 
 %prep
 %setup -q -n pcre-ocaml-release-%{version}
+%patch0 -p1
 
 %build
 %make
@@ -65,6 +67,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc doc/pcre/html
 %doc doc/pcre/latex/*.{dvi,pdf}
+%doc examples/
 %{_libdir}/ocaml/pcre/*.a
 %{_libdir}/ocaml/pcre/*.cmxa
 %{_libdir}/ocaml/pcre/*.mli
