@@ -1,6 +1,6 @@
 %define name	ocaml-pcre
 %define version	6.0.1
-%define release	%mkrel 4
+%define release	%mkrel 5
 
 Name:		%{name}
 Version:	%{version}
@@ -10,7 +10,7 @@ Source: 	http://hg.ocaml.info/release/pcre-ocaml/archive/pcre-ocaml-release-%{ve
 # curl http://hg.ocaml.info/release/pcre-ocaml/archive/release-%{version}.tar.bz2 > pcre-ocaml-release-%{version}.tar.bz2
 URL:		http://ocaml.info/home/ocaml_sources.html#pcre-ocaml
 Patch0:		pcre-ocaml-examples-makefile.patch
-License:	GPL
+License:	LGPL
 Group:		Development/Other
 BuildRequires:	ocaml
 BuildRequires:	pcre-devel
