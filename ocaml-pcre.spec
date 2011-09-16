@@ -1,6 +1,6 @@
 %define name	ocaml-pcre
 %define version	6.2.2
-%define release	%mkrel 1
+%define release 1
 
 Name:		%{name}
 Version:	%{version}
@@ -15,7 +15,7 @@ Group:		Development/Other
 BuildRequires:	ocaml
 BuildRequires:	pcre-devel
 BuildRequires:  ocaml-findlib
-BuildRequires:  tetex-latex
+BuildRequires:  texlive-latex
 Conflicts:      %{name}-devel < 5.12.2
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
