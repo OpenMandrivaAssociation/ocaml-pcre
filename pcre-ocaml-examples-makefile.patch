@@ -1,0 +1,64 @@
+diff -u -r pcre-ocaml-release-6.0.1/examples/cloc/Makefile pcre-ocaml-release-6.0.1_/examples/cloc/Makefile
+--- pcre-ocaml-release-6.0.1/examples/cloc/Makefile	2009-06-20 23:27:07.000000000 +0200
++++ pcre-ocaml-release-6.0.1_/examples/cloc/Makefile	2009-09-04 13:48:51.000000000 +0200
+@@ -1,8 +1,9 @@
+-OCAMLMAKEFILE = ../../OCamlMakefile
++# install the package ocamlmakefile for this file
++OCAMLMAKEFILE = /usr/share/ocamlmakefile/OCamlMakefile
+ 
+ SOURCES = cloc.ml
+-INCDIRS = ../../lib
+-LIBDIRS = ../../lib
++INCDIRS = +pcre
++LIBDIRS = +pcre
+ LIBS    = pcre
+ RESULT  = cloc
+ 
+diff -u -r pcre-ocaml-release-6.0.1/examples/count_hash/Makefile pcre-ocaml-release-6.0.1_/examples/count_hash/Makefile
+--- pcre-ocaml-release-6.0.1/examples/count_hash/Makefile	2009-06-20 23:27:07.000000000 +0200
++++ pcre-ocaml-release-6.0.1_/examples/count_hash/Makefile	2009-09-04 13:48:54.000000000 +0200
+@@ -1,8 +1,9 @@
+-OCAMLMAKEFILE = ../../OCamlMakefile
++# install the package ocamlmakefile for this file
++OCAMLMAKEFILE = /usr/share/ocamlmakefile/OCamlMakefile
+ 
+ SOURCES = count_hash.ml
+-INCDIRS = ../../lib
+-LIBDIRS = ../../lib
++INCDIRS = +pcre
++LIBDIRS = +pcre
+ LIBS    = pcre
+ RESULT  = count_hash
+ 
+diff -u -r pcre-ocaml-release-6.0.1/examples/pcregrep/Makefile pcre-ocaml-release-6.0.1_/examples/pcregrep/Makefile
+--- pcre-ocaml-release-6.0.1/examples/pcregrep/Makefile	2009-06-20 23:27:07.000000000 +0200
++++ pcre-ocaml-release-6.0.1_/examples/pcregrep/Makefile	2009-09-04 13:48:56.000000000 +0200
+@@ -1,8 +1,9 @@
+-OCAMLMAKEFILE = ../../OCamlMakefile
++# install the package ocamlmakefile for this file
++OCAMLMAKEFILE = /usr/share/ocamlmakefile/OCamlMakefile
+ 
+ SOURCES = pcregrep.ml
+-INCDIRS = ../../lib
+-LIBDIRS = ../../lib
++INCDIRS = +pcre
++LIBDIRS = +pcre
+ LIBS    = pcre
+ RESULT  = pcregrep
+ 
+diff -u -r pcre-ocaml-release-6.0.1/examples/subst/Makefile pcre-ocaml-release-6.0.1_/examples/subst/Makefile
+--- pcre-ocaml-release-6.0.1/examples/subst/Makefile	2009-06-20 23:27:07.000000000 +0200
++++ pcre-ocaml-release-6.0.1_/examples/subst/Makefile	2009-09-04 13:48:58.000000000 +0200
+@@ -1,8 +1,9 @@
+-OCAMLMAKEFILE = ../../OCamlMakefile
++# install the package ocamlmakefile for this file
++OCAMLMAKEFILE = /usr/share/ocamlmakefile/OCamlMakefile
+ 
+ SOURCES = subst.ml
+-INCDIRS = ../../lib
+-LIBDIRS = ../../lib
++INCDIRS = +pcre
++LIBDIRS = +pcre
+ LIBS    = pcre
+ RESULT  = subst
+ 
