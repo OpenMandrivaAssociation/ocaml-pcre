@@ -33,7 +33,7 @@ This package contains the development files needed to build applications
 using %{name}.
 
 %prep
-%setup -q -n pcre-ocaml-release-%{version}
+%setup -q -n pcre-ocaml-%{version}
 %patch0 -p1
 
 %build
