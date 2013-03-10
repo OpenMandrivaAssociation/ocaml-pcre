@@ -52,6 +52,7 @@ make install
 %dir %{_libdir}/ocaml/pcre
 %{_libdir}/ocaml/pcre/*.cmi
 %{_libdir}/ocaml/pcre/*.cma
+%{_libdir}/ocaml/pcre/*.cmxs
 %{_libdir}/ocaml/pcre/META
 %{_libdir}/ocaml/stublibs/*.so*
 
@@ -62,7 +63,7 @@ make install
 %{_libdir}/ocaml/pcre/*.a
 %{_libdir}/ocaml/pcre/*.cmxa
 %{_libdir}/ocaml/pcre/*.mli
-
+%{_libdir}/ocaml/pcre/*.cmx
 
 %changelog
 * Fri Sep 16 2011 Alexandre Lissy <alissy@mandriva.com> 6.2.2-1
