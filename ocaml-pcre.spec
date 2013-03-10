@@ -5,7 +5,6 @@ Summary:	Perl compatibility regular expressions for OCaml
 Source: 	http://bitbucket.org/mmottl/pcre-ocaml/downloads/pcre-ocaml-%{version}.tar.gz
 # curl http://hg.ocaml.info/release/pcre-ocaml/archive/release-%{version}.tar.bz2 > pcre-ocaml-release-%{version}.tar.bz2
 URL:		http://ocaml.info/home/ocaml_sources.html#pcre-ocaml
-Patch0:		pcre-ocaml-examples-makefile.patch
 License:	LGPL
 Group:		Development/Other
 BuildRequires:	ocaml
@@ -34,7 +33,6 @@ using %{name}.
 
 %prep
 %setup -q -n pcre-ocaml-%{version}
-%patch0 -p1
 
 %build
 %make
