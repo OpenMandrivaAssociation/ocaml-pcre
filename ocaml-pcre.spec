@@ -37,6 +37,7 @@ using %{name}.
 %build
 %make
 %make doc
+mv _build/API.docdir/ html/
 
 %install
 export DESTDIR=%{buildroot}
@@ -56,8 +57,7 @@ make install
 
 %files devel
 %defattr(-,root,root)
-%doc doc/pcre/html
-%doc doc/pcre/latex/*.{dvi,pdf}
+%doc html/
 %doc examples/
 %{_libdir}/ocaml/pcre/*.a
 %{_libdir}/ocaml/pcre/*.cmxa
