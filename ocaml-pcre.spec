@@ -1,8 +1,8 @@
 Name:		ocaml-pcre
-Version:	6.2.2
-Release:	2
+Version:	7.0.2
+Release:	1
 Summary:	Perl compatibility regular expressions for OCaml
-Source: 	http://hg.ocaml.info/release/pcre-ocaml/archive/pcre-ocaml-release-%{version}.tar.bz2
+Source: 	http://bitbucket.org/mmottl/pcre-ocaml/downloads/pcre-ocaml-%{version}.tar.gz
 # curl http://hg.ocaml.info/release/pcre-ocaml/archive/release-%{version}.tar.bz2 > pcre-ocaml-release-%{version}.tar.bz2
 URL:		http://ocaml.info/home/ocaml_sources.html#pcre-ocaml
 Patch0:		pcre-ocaml-examples-makefile.patch
