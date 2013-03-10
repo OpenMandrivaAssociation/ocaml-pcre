@@ -39,9 +39,11 @@ using %{name}.
 %make doc
 
 %install
+export DESTDIR=%{buildroot}
+export OCAMLFIND_DESTDIR=%{buildroot}/%{_libdir}/ocaml
 install -d -m 755 %{buildroot}/%{_libdir}/ocaml
 install -d -m 755 %{buildroot}/%{_libdir}/ocaml/stublibs
-make install OCAMLFIND_INSTFLAGS="-destdir %{buildroot}/%{_libdir}/ocaml"
+make install
 
 %files
 %defattr(-,root,root)
