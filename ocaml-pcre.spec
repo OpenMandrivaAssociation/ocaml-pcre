@@ -48,7 +48,7 @@ make install
 
 %files
 %defattr(-,root,root)
-%doc Changelog INSTALL LICENSE README.txt
+%doc README.md COPYING.txt AUTHORS.txt CHANGES.txt
 %dir %{_libdir}/ocaml/pcre
 %{_libdir}/ocaml/pcre/*.cmi
 %{_libdir}/ocaml/pcre/*.cma
