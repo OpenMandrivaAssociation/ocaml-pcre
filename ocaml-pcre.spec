@@ -1,7 +1,7 @@
 Summary:	Perl compatibility regular expressions for OCaml
 Name:		ocaml-pcre
 Version:	7.0.2
-Release:	2
+Release:	3
 License:	LGPLv2.1+
 Group:		Development/Other
 Url:		http://ocaml.info/home/ocaml_sources.html#pcre-ocaml
