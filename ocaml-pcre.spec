@@ -4,7 +4,7 @@ Version:	7.0.2
 Release:	3
 License:	LGPLv2.1+
 Group:		Development/Other
-Url:		http://ocaml.info/home/ocaml_sources.html#pcre-ocaml
+Url:		https://ocaml.info/home/ocaml_sources.html#pcre-ocaml
 # curl http://hg.ocaml.info/release/pcre-ocaml/archive/release-%{version}.tar.bz2 > pcre-ocaml-release-%{version}.tar.bz2
 Source0:	http://bitbucket.org/mmottl/pcre-ocaml/downloads/pcre-ocaml-%{version}.tar.gz
 BuildRequires:	ocaml
